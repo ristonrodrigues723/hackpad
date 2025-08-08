@@ -41,7 +41,7 @@ The custom PCB was designed using **EasyEDA**. The layout was carefully verified
 
 
 - **PCB Layout:**  <img width="1913" height="874" alt="image" src="https://github.com/user-attachments/assets/9254b6fd-e825-4567-8860-53f1aa45c890" />
-- **Gerber Files:** [Link to Gerber files folder]
+- **Gerber Files:** [[Link to Gerber files folder]](https://github.com/ristonrodrigues723/hackpad/blob/main/hackpads/Riston_gamepad/production/macro13.zip)
 
 ### Firmware
 
