@@ -47,7 +47,7 @@ The custom PCB was designed using **EasyEDA**. The layout was carefully verified
 
 The firmware is based on **KMK**, a powerful and user-friendly firmware built on CircuitPython. The code includes support for the OLED screen and the dual-function 13th key.
 
-- **Firmware Code:** [Link to your firmware folder]
+- **Firmware Code:** [[Link to your firmware folder]](https://github.com/ristonrodrigues723/hackpad/blob/main/hackpads/Riston_gamepad/production/code.py)
 
 ---
 
