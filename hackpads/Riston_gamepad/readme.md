@@ -1,57 +1,78 @@
-# My Awesome Custom Keyboard!
+# The "Macro-13" Custom Macropad
 
-This is my project for a custom keyboard. It's got 13 keys (like a mini-keyboard), an OLED screen, and some cool Neopixel lights.
+## Overview
 
-## What it does
+The **Macro-13** is a custom-built, 13-key macropad designed to enhance gaming and productivity workflows. This project integrates a **0.96" OLED screen** and vibrant **SK6812 Neopixel RGB lighting** into a compact, custom-designed case. The macropad is powered by a **XIAO RP2040 microcontroller** and utilizes **KMK firmware**, making it fully programmable and easy to customize.
 
-It's basically a small keyboard that I can use for gaming or anything else.  The OLED screen can show stuff, and the Neopixels light up!
+---
 
-## Parts List (Bill of Materials)
+## Features
 
-| Item             | Quantity | Notes                                      |
-| ---------------- | -------- | ----------------------------------------- |
-| Cherry MX Keys    | 13       |                                           |
-| Keycaps          | 13       |   black  |
-| M3 Screws        | 8      | M3x16mm                                    |
-| PCB              | 1        |                                           |
-| XIAO RP2040 MCU   | 1        |                                           |
-| SK6812 MINI-E LEDs | 12      | Using up to 9, 3 exxtra for backup.       |
-| 1N4148 Diodes    | 16       | 13 for the keys, 3 extra just in case.      |
-| OLED Display -0.96 0ne   | 1        | [Link to OLED](https://www.aliexpress.com/item/1005007689097248.html?spm=a2g0o.productlist.main.7.6b645392Io9IUI&algo_pvid=d0e2f0a7-25ca-4bd2-abf9-0d51e69e6301&algo_exp_id=d0e2f0a7-25ca-4bd2-abf9-0d51e69e6301-3&pdp_npi=4%40dis%21INR%21101.20%21101.20%21%21%218.30%218.30%21%402151e46917294483196643000e636e%2112000041848914065%21sea%21US%213949123155%21ABX&curPageLogUid=vjNGXR7xkV8a&utparam-url=scene%3Asearch%7Cquery_from%3A&gatewayAdapt=4itemAdapt) |
-| M3 Hex Nuts      | 8     |                                           |
-| Heatset Inserts  | 8      |                            |
-|330 OHM RESISTOR  | 1      |                            |
-|100uf capicitor-JBLH2101M050D090RLM 100UF 50V| 1        | lcsc  or https://quartzcomponents.com/products/100uf-50v-smd-electrolytic-capacitor?srsltid=AfmBOoqkiAGV60obKofCiIf2igcHeRBV1DKk76Hr393-YOcm_n1JSx92 2 dollars wth dilevery              |
-| Case Bottom      | 1        | `case_bot.stl` (Black)                     |
-| Case Top         | 1        | `case_top.stl` (Black)                     |
+- **13 Programmable Keys:** A compact layout perfect for consolidating essential keys, whether for gaming, macros, or a dedicated numpad.
+- **Dual-Function 13th Key:** A unique feature that allows a single press to cycle through various **Neopixel RGB color combinations**, while a double press switches between different keyboard modes (e.g., gaming, numpad, custom layouts).
+- **Integrated OLED Display:** The 0.96" OLED screen provides real-time feedback, showing the active keymap, current layer, or custom graphics.
+- **Dynamic Neopixel Lighting:** 9 SK6812 MINI-E LEDs are used for per-key and underglow lighting, creating a stylish and immersive gaming aesthetic.
+- **Custom 3D-Printed Case:** A robust, two-part case (`case_top.stl` and `case_bottom.stl`) designed in Onshape to provide a secure and professional enclosure for the electronics.
 
-## why I built it
+---
 
-i like to play games and neeed a pad that would bring all imp keys together without damaging laptop keys 
-ill modify frimware to latwr include numpad as 2nd pad
+## Project Motivation
 
-## Pictures! 
+I created the Macro-13 to have a dedicated gaming pad that prevents wear and tear on my laptop's keyboard. This project was also a valuable hands-on experience in electronics, PCB design, and 3D modeling, allowing me to build a unique and functional piece of hardware to share with others.
 
-schematic-![image](https://github.com/user-attachments/assets/7c9db3ad-6fbd-42ef-890a-86c0e1709dd5)
+---
 
-pcb-![image](https://github.com/user-attachments/assets/8d4d7275-f2d3-4f37-8044-3ba92ff5ba1a)
+## Build Guide & Design
 
-3d pcb-![image](https://github.com/user-attachments/assets/2a342a07-8098-4f48-8225-53351d42a978)
+### CAD Design
 
-case assembled fuly-![image](https://github.com/user-attachments/assets/83b1aaa7-1492-4631-af61-9061e48c1162)
+The case was designed and iteratively refined in **Onshape**. The final design provides a secure and professional-looking enclosure using heatset inserts and M3 screws. The case geometry was also optimized to diffuse the RGB lighting, enhancing the overall visual appeal.
 
-case assembled fuly-![image](https://github.com/user-attachments/assets/d28bdc69-ef74-4335-8b19-ad009aee84bc)
+- **Onshape Public Document:**  <img width="1913" height="874" alt="image" src="https://github.com/user-attachments/assets/9254b6fd-e825-4567-8860-53f1aa45c890" />
+- **STLs for 3D Printing:**
+  - `case_top.stl`
+  - `case_bottom.stl`
+
+### PCB Design
+
+The custom PCB was designed using **EasyEDA**. The layout was carefully verified to ensure reliability. The KiCad files and Gerbers are available in this repository.
+
+- **Schematic:**<img width="1919" height="879" alt="image" src="https://github.com/user-attachments/assets/19e88a92-1738-4921-a559-d4c970dc2713" />
 
 
+- **PCB Layout:**  <img width="1913" height="874" alt="image" src="https://github.com/user-attachments/assets/9254b6fd-e825-4567-8860-53f1aa45c890" />
+- **Gerber Files:** [Link to Gerber files folder]
 
+### Firmware
 
+The firmware is based on **KMK**, a powerful and user-friendly firmware built on CircuitPython. The code includes support for the OLED screen and the dual-function 13th key.
 
-## What's next?
-*   changes toi  ase to it looks good ands gives gaming vibes
-*   addition of better frimware to add diff keyboard modes
-*   Maybe add some more cool features later.
+- **Firmware Code:** [Link to your firmware folder]
 
-## Why I made this
+---
 
-so i can have a better gaming expo and showoff sth i made to friends
+## Bill of Materials (BOM)
 
+| Item | Quantity | Notes |
+| :--- | :--- | :--- |
+| **Microcontroller** | 1 | XIAO RP2040 MCU |
+| **Switches** | 13 | Cherry MX Keys |
+| **Diodes** | 16 | 1N4148 Diodes |
+| **LEDs** | 9 | SK6812 MINI-E LEDs |
+| **Display** | 1 | 0.96" OLED Display |
+| **Resistor** | 1 | 330 Ohm Resistor |
+| **Capacitor** | 1 | 100uF 50V Capacitor, SMD |
+| **PCB** | 1 | Custom-designed PCB |
+| **Keycaps** | 13 | Your choice of keycaps |
+| **Screws** | 8 | M3 Screws, 16mm |
+| **Nuts** | 8 | M3 Hex Nuts |
+| **Inserts** | 8 | Heatset Inserts |
+| **Case** | 1 | `case_bot.stl` and `case_top.stl` |
+
+---
+
+## Future Plans
+
+- Develop more advanced firmware with additional keymap layers.
+- Explore adding a rotary encoder or a small joystick.
+- Further refine the case design for a more polished aesthetic.
