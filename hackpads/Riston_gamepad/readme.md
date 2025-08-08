@@ -29,7 +29,7 @@ I created the Macro-13 to have a dedicated gaming pad that prevents wear and tea
 
 The case was designed and iteratively refined in **Onshape**. The final design provides a secure and professional-looking enclosure using heatset inserts and M3 screws. The case geometry was also optimized to diffuse the RGB lighting, enhancing the overall visual appeal.
 
-- **Onshape Public Document:**  <img width="1913" height="874" alt="image" src="https://github.com/user-attachments/assets/9254b6fd-e825-4567-8860-53f1aa45c890" />
+- **Onshape Public Document:** (https://cad.onshape.com/documents/61243c5171fbd3e50e16700b/w/c5ecf9eed009054eb045bae8/e/93439726fa2acad4308ab2b4)
 - **STLs for 3D Printing:**
   - `case_top.stl`
   - `case_bottom.stl`
