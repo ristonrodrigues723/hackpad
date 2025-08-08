@@ -3,6 +3,7 @@
 ## Overview
 
 The **Macro-13** is a custom-built, 13-key macropad designed to enhance gaming and productivity workflows. This project integrates a **0.96" OLED screen** and vibrant **SK6812 Neopixel RGB lighting** into a compact, custom-designed case. The macropad is powered by a **XIAO RP2040 microcontroller** and utilizes **KMK firmware**, making it fully programmable and easy to customize.
+<img width="1919" height="829" alt="image" src="https://github.com/user-attachments/assets/67d040b0-d0d8-464c-a18e-ed88a898f5ae" />
 
 ---
 
